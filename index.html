@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>탭 슬라이더</title>
+  <link rel="stylesheet" href="./index_files/index.css">
+  <script src="./index_files/jquery-3.7.0.min.js.다운로드"></script>
+  <script src="./index_files/index.js.다운로드"></script>
+</head>
+
+<body>
+
+  <div class="tab-inner">
+    <h1>Korea Best Soccer Player</h1>
+    <input type="radio" name="tab" id="tab1" checked="">
+    <input type="radio" name="tab" id="tab2">
+    <input type="radio" name="tab" id="tab3">
+    <div class="tabs">
+      <div class="items">
+        <div>
+          <img src="./index_files/img01.jpg">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate repudiandae dicta fugit deserunt doloremque, dolorum sunt maiores ex officia, laborum voluptatem consectetur corrupti! Harum ipsam nesciunt itaque mollitia, dolorum ea!
+          </p>
+          <p>
+            <b>Heung Min Son</b>
+            <span>Tottenham Hotspur</span>
+            Premier League
+          </p>
+        </div>
+        <div>
+          <img src="./index_files/img02.jpg">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate repudiandae dicta fugit deserunt doloremque, dolorum sunt maiores ex officia, laborum voluptatem consectetur corrupti! Harum ipsam nesciunt itaque mollitia, dolorum ea!
+          </p>
+          <p>
+            <b>Ji Sung Park</b>
+            <span>Manchester United</span> Premier League
+          </p>
+        </div>
+        <div>
+          <img src="./index_files/img03.jpg">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate repudiandae dicta fugit deserunt doloremque, dolorum sunt maiores ex officia, laborum voluptatem consectetur corrupti! Harum ipsam nesciunt itaque mollitia, dolorum ea!
+          </p>
+          <p>
+            <b>Min jae Kim</b>
+            <span>SSC Napoli</span> Serie A
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <label for="tab1"></label>
+      <label for="tab2"></label>
+      <label for="tab3"></label>
+    </div>
+  </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
